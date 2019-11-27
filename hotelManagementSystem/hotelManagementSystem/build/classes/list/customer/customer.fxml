@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="440.0" prefWidth="1060.0" style="-fx-border-color: #0066ff; -fx-border-width: 2px;" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="list.customer.CustomerController">
+   <children>
+      <BorderPane prefHeight="440.0" prefWidth="1060.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <TableView fx:id="tableview" prefHeight="200.0" prefWidth="200.0" tableMenuButtonVisible="true" BorderPane.alignment="CENTER">
+              <columns>
+                <TableColumn fx:id="idCol" prefWidth="104.0" text="ID" />
+                <TableColumn fx:id="nameCol" prefWidth="241.0" text="Name" />
+                  <TableColumn fx:id="genderCol" minWidth="0.0" prefWidth="93.0" text="Gender" />
+                  <TableColumn fx:id="addressCol" prefWidth="232.0" text="Address" />
+                  <TableColumn fx:id="passportCol" minWidth="0.0" prefWidth="207.0" text="Email" />
+                  <TableColumn fx:id="cardCol" minWidth="0.0" prefWidth="160.0" text="Mobile" />
+              </columns>
+            </TableView>
+         </center>
+         <top>
+            <Label text="List of Customers" textFill="#0066ff" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="25.0" />
+               </font>
+            </Label>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="575.0" prefWidth="1069.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="check.CheckController">
+   <children>
+      <BorderPane fx:id="centerCarrier" layoutX="450.0" layoutY="173.0" prefHeight="545.0" prefWidth="1099.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <Pane prefHeight="127.0" prefWidth="1099.0" BorderPane.alignment="CENTER">
+               <children>
+                  <MenuBar layoutY="2.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="1200.0" style="-fx-background-color: transparent;">
+                    <menus>
+                      <Menu mnemonicParsing="false" text="File">
+                        <items>
+                          <MenuItem mnemonicParsing="false" onAction="#exitOP" text="Exit" />
+                          <MenuItem mnemonicParsing="false" onAction="#printOP" text="Print" />
+                        </items>
+                      </Menu>
+                        <Menu mnemonicParsing="false" text="Transaction">
+                           <items>
+                              <MenuItem mnemonicParsing="false" onAction="#transactionOP" text="View Record" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Search">
+                           <items>
+                              <MenuItem mnemonicParsing="false" onAction="#searchCustomerOP" text="Customer" />
+                              <MenuItem mnemonicParsing="false" onAction="#searchRoomOP" text="Room" />
+                              <MenuItem mnemonicParsing="false" onAction="#searchTransactionOP" text="Transaction" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="View">
+                           <items>
+                              <MenuItem mnemonicParsing="false" onAction="#listRoomOP" text="Room" />
+                              <MenuItem mnemonicParsing="false" onAction="#listStaffOP" text="Staff" />
+                              <MenuItem mnemonicParsing="false" onAction="#listCustomerOP" text="Customer" />
+                           </items></Menu>
+                        <Menu mnemonicParsing="false" text="Security" visible="false" />
+                        <Menu mnemonicParsing="false" text="Report" visible="false">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="Auto Generate" />
+                              <MenuItem mnemonicParsing="false" text="Manual Generate" />
+                           </items>
+                        </Menu>
+                      <Menu mnemonicParsing="false" text="Help">
+                           <items>
+                              <MenuItem mnemonicParsing="false" onAction="#helpOP" text="On Software" />
+                           </items></Menu>
+                        <Menu mnemonicParsing="false" text="About">
+                           <items>
+                              <MenuItem mnemonicParsing="false" onAction="#about1OP" text="About Software" />
+                              <MenuItem mnemonicParsing="false" onAction="#about2OP" text="About Developer" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Credits">
+                           <items>
+                              <MenuItem mnemonicParsing="false" onAction="#creditOP" text="Project Credit" />
+                           </items></Menu>
+                    </menus>
+                  </MenuBar>
+                  <Label layoutX="366.0" layoutY="74.0" text="KSSD  HOTEL SERVICES" textFill="#0066ff">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutX="32.0" layoutY="27.0" prefHeight="26.0" prefWidth="1033.0">
+                     <children>
+                        <HBox layoutY="1.0" prefHeight="25.0" prefWidth="1031.0">
+                           <children>
+                              <JFXButton onAction="#checkinOP" ripplerFill="#0066ff" text="Check In">
+                                 <graphic>
+                                    <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" smooth="false">
+                                       <image>
+                                          <Image url="@../images/check.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </JFXButton>
+                              <JFXButton layoutX="10.0" layoutY="10.0" onAction="#checkoutOP" ripplerFill="#0066ff" text="Check Out">
+                                 <graphic>
+                                    <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/checkOut.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </JFXButton>
+                              <JFXButton layoutX="91.0" layoutY="10.0" onAction="#listRoomOP" ripplerFill="#0066ff" text="View Rooms">
+                                 <graphic>
+                                    <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/view.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </JFXButton>
+                              <JFXButton layoutX="10.0" layoutY="10.0" onAction="#setupUserOP" ripplerFill="#0066ff" text="Setup">
+                                 <graphic>
+                                    <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/setup.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </JFXButton>
+                              <JFXButton layoutX="91.0" layoutY="10.0" onAction="#logoutOP" ripplerFill="#0066ff" text="Log Out">
+                                 <graphic>
+                                    <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/logout.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </JFXButton>
+                              <JFXButton layoutX="172.0" layoutY="10.0" onAction="#exitOP" ripplerFill="#0066ff" text="Exit">
+                                 <graphic>
+                                    <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/exit.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </JFXButton>
+                              <JFXButton layoutX="550.0" layoutY="10.0" onAction="#adminOP" ripplerFill="#0066ff" text="Admin">
+                                 <graphic>
+                                    <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/Circled%20User%20Male_48px.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <HBox.margin>
+                                    <Insets left="400.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                     </children>
+                  </Pane>
+                  <Label fx:id="lblStaffName" layoutX="771.0" layoutY="81.0" prefHeight="17.0" prefWidth="291.0" text="Staff Name" textFill="GREEN" wrapText="true">
+                     <graphic>
+                        <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/Circled%20User%20Male_48px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+                  <Label fx:id="lblStaffID" layoutX="14.0" layoutY="81.0" text="Staff ID" textFill="GREEN" wrapText="true">
+                     <graphic>
+                        <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/User%20Groups_30px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+               </children>
+            </Pane>
+         </top>
+         <center>
+            <Pane fx:id="centerPane" style="-fx-border-width: 1px; -fx-border-color: rgb(0,102,255);" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="440.0" prefWidth="1060.0" style="-fx-border-color: #0066ff; -fx-border-width: 2px;" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin.AdminController">
+   <children>
+      <Label layoutX="428.0" layoutY="14.0" text="Staff Operation" textFill="GREY">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="30.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtID" labelFloat="true" layoutX="405.0" layoutY="115.0" prefHeight="20.0" prefWidth="266.0" promptText="Staff ID" />
+      <JFXTextField fx:id="txtName" labelFloat="true" layoutX="405.0" layoutY="173.0" prefHeight="20.0" prefWidth="266.0" promptText="Staff Full Name" />
+      <JFXTextField fx:id="txtRank" labelFloat="true" layoutX="405.0" layoutY="232.0" prefHeight="20.0" prefWidth="266.0" promptText="Staff Rank" />
+      <JFXPasswordField fx:id="txtPassword" labelFloat="true" layoutX="405.0" layoutY="300.0" prefHeight="25.0" prefWidth="266.0" promptText="Login Key" />
+      <JFXButton layoutX="405.0" layoutY="365.0" onAction="#registerOP" text="Register" textFill="GREEN" />
+      <JFXButton layoutX="512.0" layoutY="365.0" onAction="#updateOP" text="Update" textFill="#756410" />
+      <JFXButton layoutX="599.0" layoutY="365.0" text="Unregister" textFill="#c91111" />
+      <JFXButton layoutX="671.0" layoutY="115.0" onAction="#searchOP" text="Find">
+         <graphic>
+            <ImageView fitHeight="15.0" fitWidth="15.0" onDragDetected="#searchOP" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/find.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

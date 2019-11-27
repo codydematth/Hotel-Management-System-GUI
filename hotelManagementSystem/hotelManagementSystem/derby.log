@@ -1,0 +1,10 @@
+----------------------------------------------------------------
+Thu Dec 06 10:48:11 WAT 2018:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-0167-82ea-e325-000002e12e30 
+on database directory C:\Users\MATTHIAS\Documents\NetBeansProjects\hotelManagementSystem\hotelManagementSystem\src\db\dat00  with class loader sun.misc.Launcher$AppClassLoader@55f96302 
+Loaded from file:/C:/Users/MATTHIAS/Documents/NetBeansProjects/hotelManagementSystem/hotelManagementSystem/dist/run524994565/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_191-b12
+user.dir=C:\Users\MATTHIAS\Documents\NetBeansProjects\hotelManagementSystem\hotelManagementSystem
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
